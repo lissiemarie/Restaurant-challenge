@@ -1,7 +1,7 @@
 header {
     height: auto;
+    background: linear-gradient(0.25turn, #fff 10%, #000 50%, #000 10%);
 }
-
 @keyframes scribble {
     to {
         stroke-dashoffset: 0;
@@ -28,7 +28,7 @@ h2 {
 }
 
 #stripped svg {
-    background: #000;
+    background: black;
     mix-blend-mode: darken;
 }
 
@@ -137,6 +137,10 @@ main {
 /* Menu pictures and animation */
 .menu-pictures {
     margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -148,6 +152,7 @@ main {
 
     display: grid;
     border-radius: 50%;
+    margin: 0 30px;
 }
 
 .gallery>img {
@@ -198,7 +203,7 @@ main {
     display: inline-flex;
     width: 180px;
     height: 55px;
-    margin: 20px 15px;
+    margin: 20px auto 30px;
     perspective: 1000px;
 }
 
@@ -241,10 +246,20 @@ main {
     transform: translateZ(-25px) rotateX(-90deg);
 }
 
+iframe {
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+h3 {
+    font-size: 40px;
+
+}
+
 /* Social media buttons */
 ul {
     display: flex;
-    margin: 100px auto;
+    margin: 60px auto;
     padding: 0;
 }
 
@@ -369,3 +384,33 @@ ul li:hover:nth-child(4) a:before {
 ul li:hover:nth-child(4) a:after {
     background: #e46880;
 }
+
+footer {
+    text-align: center;
+    margin: 50px auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer a {
+    color: red;
+    text-decoration: none;
+    position: relative;
+}
+
+footer a::after {
+    content: "";
+    background: red;
+    mix-blend-mode: exclusion;
+    width: calc(80% + 25px);
+    height: 0;
+    position: absolute;
+    bottom: -4px;
+    left: -3px;
+    transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+footer a:hover::after {
+    height: calc(100% + 8px)
+}
+        
+    

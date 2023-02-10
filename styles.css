@@ -1,6 +1,6 @@
 header {
     height: auto;
-    background: linear-gradient(0.25turn, #fff 10%, #000 50%, #000 10%);
+    background: transparent;
 }
 @keyframes scribble {
     to {
@@ -9,7 +9,7 @@ header {
 }
 
 body {
-    background: #000;
+    background: linear-gradient(178deg, rgb(109, 107, 107) 0%, rgb(11, 2, 0) 100%);
     color: #fff;
 }
 
@@ -28,7 +28,7 @@ h2 {
 }
 
 #stripped svg {
-    background: black;
+    background: gray;
     mix-blend-mode: darken;
 }
 
@@ -65,16 +65,20 @@ main {
     justify-content: center;
     align-items: center;
     margin-top: -20px;
+    
 }
 
 .description p {
-    border: 2px solid white;
+    border: 2px solid black;
+    color: black;
+    background: whitesmoke;
     border-radius: 20px;
     padding: 20px;
     font-size: 18.5px;
     width: 400px;
     text-align: left;
     box-shadow: 20px 20px 17px 4px rgba(255, 2, 2, 0.5);
+    line-height: 25px;
 }
 
 .description img {

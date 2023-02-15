@@ -15,6 +15,7 @@ body {
 
 h2 {
     font-size: 50px;
+    text-align: center;
 }
 
 #stripped {
@@ -54,6 +55,7 @@ main {
     align-items: center;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 
@@ -418,3 +420,102 @@ footer a:hover::after {
 }
         
     
+@media (max-width: 1380px) {
+    .description {
+        flex-direction: column;
+    }
+
+    .description p {
+        font-size: 15px;
+    }
+
+    .description img {
+        margin-top: 100px;
+    }
+
+    .location {
+        margin: 60px auto;
+
+    }
+
+    .gallery>img {
+        width: 300px;
+    }
+    
+}
+
+@media (max-width: 1130px) {
+    h2 {
+        font-size: 40px;
+    }
+
+    .gallery>img {
+        width: 200px;
+    }
+}
+
+@media (max-width: 810px) {
+
+
+    ul li a {
+        width: 175px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 640px) {
+    h2 {
+        font-size: 30px;
+    }
+
+    main {
+        margin: 0 auto;
+    }
+
+    .description {
+        margin: 30px 0;
+    }
+
+    .description p {
+        width: 250px;
+    }
+
+    .description img {
+        height: 275px;
+    }
+
+    .menu-pictures {
+        margin: 30px auto;
+        flex-direction: column;
+    }
+
+    .gallery {
+        margin: 30px auto;
+    }
+
+    iframe {
+        width: 90%;
+    }
+
+    h3 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    ul li {
+        margin: 20px auto;
+    }
+
+    ul li a .fa {
+        font-size: 20px;
+    }
+
+    ul li a {
+        width: 150px;
+        padding-left: 0;
+    }
+}
